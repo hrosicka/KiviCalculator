@@ -3,18 +3,21 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
+from kivymd.app import MDApp 
+from kivymd.uix.boxlayout import MDBoxLayout
+from kivymd.uix.button import MDFillRoundFlatIconButton
+from kivymd.uix.textfield import MDTextField
+from kivymd.uix.gridlayout import MDGridLayout
 
-class CalculatorApp(App):
+class CalculatorApp(MDApp):
     def build(self):
 
-        res_layout = BoxLayout()
-
-        self.result = TextInput(multiline=False, font_size=40, halign='right')
+        res_layout = MDBoxLayout(orientation='horizontal', padding=10)
+        self.result = MDTextField(multiline=False, font_size=40, halign='right', size_hint_x=0.8)
         res_layout.add_widget(self.result)
         res_layout.size_hint_y = 0.2
 
-        button_layout = GridLayout(cols=4)
-
+        button_layout = MDGridLayout(cols=4, padding=10)
 
         numbers = ['7', '8', '9', '/',
                 '4', '5', '6', '*',
@@ -22,11 +25,14 @@ class CalculatorApp(App):
                 '0', '.', '=', '+']
 
         for number in numbers:
-            button = Button(text=number, font_size=30, background_color=(0.8, 0.8, 0.8, 1))
+            button = Button(
+                text=number, 
+                font_size=30
+                )
             button.bind(on_press=self.on_button_click)
             button_layout.add_widget(button)
 
-        main_layout = BoxLayout(orientation='vertical')
+        main_layout = MDBoxLayout(orientation='vertical')
         main_layout.add_widget(res_layout)
         main_layout.add_widget(button_layout)
 
