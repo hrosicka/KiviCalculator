@@ -2,6 +2,8 @@
 
 Welcome to the Simple Kivy Calculator! This project is a lightweight and elegant calculator application built using the [Kivy](https://kivy.org/) framework. Its intuitive design ensures ease of use and seamless functionality for performing basic arithmetic operations.
 
+![](https://github.com/hrosicka/KiviCalculator/blob/master/doc/Calculator.png)
+
 ## ✨ Features
 - **Core Arithmetic Operations**: Perform addition, subtraction, multiplication, and division effortlessly.
 - **Responsive User Interface**: Built with Kivy for a clean and user-friendly experience.
