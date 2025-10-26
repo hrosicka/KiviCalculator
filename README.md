@@ -15,5 +15,9 @@ To run this application, ensure you have the following installed:
 - **Python 3.x**: The latest version of Python is recommended.
 - **Kivy**: A powerful framework for building multi-touch applications.
 
+## 👩‍💻 Author
+Lovingly crafted by [Hanka Robovska](https://github.com/hrosicka) 
+
 ## 📝 License
-This project is licensed under the MIT License.   
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details. Free to use, modify, and distribute as needed.
+
